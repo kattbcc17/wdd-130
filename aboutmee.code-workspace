@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Web Development"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Desktop/Intro to Python Development"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wdd130"
+	}
+}
