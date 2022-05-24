@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto&display=swap');
+
+:root {
+--heading-font: "Smooch";
+--paragraph-font: Koulen, Helvetica, sans-serif;
+}
+
 #content {
     max-width: 1600px;    
     margin: 0 auto;
@@ -10,6 +17,12 @@ nav a {
 }
 
 #hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+nav a {
+    padding: 35px;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -27,6 +40,19 @@ main section {
 
 body {
     background-color: cornsilk;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo_link { 
+    width: 100%;
+    padding-top: 5px;
+}
+
+#hero-img {
+    width: 100%;
 }
 
 header {
@@ -42,6 +68,10 @@ nav a:hover {
     background-color: darkcyan;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -54,8 +84,8 @@ nav a:hover {
 }
 
 .msg {
-    background-color: cadetblue;
-    
+    background-color: #6f7364;
+    padding-bottom: 15px;
 }
 
 footer {
@@ -63,8 +93,16 @@ footer {
     text-decoration: none;
 }
 
-.home-tittle {
+
+.home-title {
+    font-family: 'Playfair Display', 'Bradley Hand', sans-serif;
+    font-size: 2em;
     color: black;
+    margin-top: 50px;
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -76,7 +114,11 @@ h4 {
 }
 
 .msg p {
+    font-size: 2em;
     color: black;
+    background-color: #6f7364;
+    line-height: 1.5em;
+    padding-bottom: 15px;
 }
 
 footer h3 {
@@ -97,8 +139,35 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 #hero-msg {
     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
+.card-img {
+    border: 10px solid cadetblue;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
