@@ -1,59 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Styles/inspiration.css">
+        <link rel="stylesheet" href="./Styles/home.css">
+        <title>Home Page</title>
+    </head>
 
-<body>
-    <header>
-        <a href="index.html">
-        <img src="./images/funnyme.jpg" alt="Logo">
-        </a>
+    <body>
+        <header>
+            <a href="index.html">
+                <img class="logo_img" src="./images/funnyme.jpg" alt="Logo">
+            </a>
 
-        <nav>
-            <a href="index.html">Deals</a>
-            <a href="designingpj.html">Designing Pajamas</a>
-            <a href="Inspiration.html">Inspiration</a>
-        </nav>
-    </header>
-    <main id="inspo">
-        <div class="inspiration">
-        <h1>Inspiration</h1>
-        <h3>Succulents</h3>
-        <p>You might be wondering why succulents? Succulents aren’t only beautiful, but they can tolerate dry, indoor conditions. Our pajamas are like succulents; they can resist anything! Also, succulents don’t need much water, and our pajamas are so soft and comfortable that you might need to take good care of them. Succulents are living sculptures, if you want to decorate your house without having to use anything else but plants, this is a good option; just as our pajamas are a perfect combination of everything you need to feel complete.</p>
-        </div>
-        <img src="./images/Picture12.jpg" alt="Pic1">
-        <img src="./images/Picture13.jpg" alt="Pic2">
-        <img src="./images/Picture14.jpg" alt="Pic3">
-        <div>
-            <h3>Rivers</h3>
-            <p>River has usually been used as a metaphor for life to compare or identify different areas and aspects of life. But, why using a river as an inspiration for our pajamas? Well, rivers start off slowly, usually picking up speed and power as they crash over rocks or rush downhill. We believe our pajamas to be like rivers they give that vibe of getting better at encountering challenges, and if you are lucky, those obstacles will strengthen you. We genuinely want our pajamas to offer you more than you have ever expected.</p>
+            <nav>
+                <a href="index.html">Deals</a>
+                <a href="designingpj.html">Designing Pajamas</a>
+                <a href="Inspiration.html">Inspiration</a>
+            </nav>
+        </header>
+        <main id="gridp3">
+            <div class="text1">
+            <h1>Inspiration</h1>
+            <p>You might be wondering why succulents? Succulents aren’t only beautiful, but they can tolerate dry, indoor conditions. Our pajamas are like succulents; they can resist anything! Also, succulents don’t need much water, and our pajamas are so soft and comfortable that you might need to take good care of them. Succulents are living sculptures, if you want to decorate your house without having to use anything else but plants, this is a good option; just as our pajamas are a perfect combination of everything you need to feel complete.
+            </p>
             </div>
-            <img src="./images/river.jpg" alt="pic6">
-            <img src="./images/river1.jpg" alt="pic7">
-            <img src="./images/riverland.jpg" alt="pic8">
-            <img src="./images/wideriver.jpg" alt="pic8">
-        </div>
-    </main>
-    <footer>
-        <h3>KABBE
-           &copy; Kattia Contreras</h3>
-        <h3>
-            Site Plan
-        </h3>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-    </footer>
-    </html>
+            <img class="imgp3" src="./images/Picture12.jpg" alt="Pic1">
+            <div class="text2">
+                <h3>Rivers</h3>
+                <p>River has usually been used as a metaphor for life to compare or identify different areas and aspects of life. But, why using a river as an inspiration for our pajamas? Well, rivers start off slowly, usually picking up speed and power as they crash over rocks or rush downhill. We believe our pajamas to be like rivers they give that vibe of getting better at encountering challenges, and if you are lucky, those obstacles will strengthen you. We genuinely want our pajamas to offer you more than you have ever expected.
+                </p>
+            </div>
+            <img class="imgp3a" src="./images/riverland.jpg" alt="pic8">
+            
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="mail">E-mail</label>
+                        <input type="email" id="mail" name="user_name">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea name="user_name" id="msg"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <h3>KABBE &copy; Kattia Contreras</h3>
+            <h3>
+                Site Plan
+            </h3>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById ("feedback") ;
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener to wait For a submisbion of ur form. When that happens run the ec
+            formElement.addEventListener("submit", function (e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the 
+                feedbackElement.innerHTML =
+                    "Hello " +
+                    formElement.user_name. value +
+                    "Thank you for your message. We will get back with you as soon as possible!";
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle("moveDown");
+            });
+
+        </script>
+    </body>
+</html>
